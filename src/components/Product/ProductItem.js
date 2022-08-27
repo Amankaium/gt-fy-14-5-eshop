@@ -7,7 +7,9 @@ export default function ProductItem({item, addToBasket}) {
     return (
         <div>
             {item.name}
-            <button onClick={() => dispatch(addProduct(item))}>+</button>
+            <button onClick={() => {dispatch(addProduct(item))}}>
+                +
+            </button>
         </div>
     )
 }
