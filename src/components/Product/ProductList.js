@@ -1,7 +1,7 @@
 import ProductItem from "./ProductItem";
 
 
-const ProductList = ({addToBasket}) => {
+const ProductList = () => {
     const products = [
         {
             id: 1,
@@ -20,7 +20,6 @@ const ProductList = ({addToBasket}) => {
                 product => <ProductItem
                     item={product}
                     key={product.id}
-                    addToBasket={addToBasket}
                 />
             ) }
         </div>
