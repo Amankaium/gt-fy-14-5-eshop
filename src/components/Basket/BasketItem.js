@@ -1,26 +1,33 @@
-import { useState, useEffect } from "react"
+import { useState } from "react";
+import { useDispatch } from 'react-redux';
+import { newCounter } from "../../features/basket/basketSlice";
 
 export default function BasketItem({ item }) {    
+    const [counter, setCounter] = useState(item.counter)
+
     const style = {
         inputStyle: {
             width: '50px'
         }
     }
 
-    // const changeCounter = (event) => {
-    //     const newValue = event.target.value
-    //     addToBasket(item, Number(newValue))
-    // }
+    const dispatch = useDispatch()
+
+    const changeCounter = (event) => {
+        const newValue = Number(event.target.value)
+        setCounter(newValue)
+        dispatch(newCounter(item, newValue))
+    }
 
     return (
         <div>
             {item.name}
-            {/* <input
+            <input
                 style={style.inputStyle}
                 type="number"
-                value={item.counter}
+                value={counter}
                 onChange={changeCounter}
-            /> */}
+            />
         </div>
     )
 }
