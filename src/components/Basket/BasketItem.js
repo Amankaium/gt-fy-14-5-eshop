@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { newCounter } from "../../features/basket/basketSlice";
 
 export default function BasketItem({ item }) {    
-    const [counter, setCounter] = useState(item.counter)
 
     const style = {
         inputStyle: {
@@ -13,10 +12,10 @@ export default function BasketItem({ item }) {
 
     const dispatch = useDispatch()
 
-    const changeCounter = (event) => {
+    const changeCounter = (event) => { 
         const newValue = Number(event.target.value)
-        setCounter(newValue)
-        dispatch(newCounter(item, newValue))
+        item.counter = newValue // {name: Apple, counter: 33}
+        dispatch(newCounter(item))
     }
 
     return (
@@ -25,7 +24,7 @@ export default function BasketItem({ item }) {
             <input
                 style={style.inputStyle}
                 type="number"
-                value={counter}
+                value={item.counter}
                 onChange={changeCounter}
             />
         </div>
