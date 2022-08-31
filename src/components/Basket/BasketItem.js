@@ -14,7 +14,10 @@ export default function BasketItem({ item }) {
 
     const changeCounter = (event) => { 
         const newValue = Number(event.target.value)
-        item.counter = newValue // {name: Apple, counter: 33}
+        item = {
+            ...item,
+            counter: newValue
+        }
         dispatch(newCounter(item))
     }
 

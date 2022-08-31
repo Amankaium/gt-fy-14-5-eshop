@@ -30,8 +30,13 @@ export const basketSlice = createSlice({
         newCounter: (state, action) => {
             const newProduct = action.payload // {id: 2, counter: 33}
             const basket = state.value // [{id: 1, ...}, {id: 2, counter: 8}]
-            // [{id: 1, ...}, {id: 2, counter: 33}]
-
+            basket.map(product => {
+                product.id === newProduct.id ? product.counter = newProduct.counter : product.counter = product.counter
+                // if ( product.id === newProduct.id ) {
+                //     product.counter = newProduct.counter
+                // }
+                return product
+            })
 
         }
     }
