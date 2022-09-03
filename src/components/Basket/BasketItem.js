@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { newCounter } from "../../features/basket/basketSlice";
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import { Dropdown } from 'react-bootstrap';
+
 
 export default function BasketItem({ item }) {    
 
@@ -22,14 +26,10 @@ export default function BasketItem({ item }) {
     }
 
     return (
-        <div>
-            {item.name}
-            <input
-                style={style.inputStyle}
-                type="number"
-                value={item.counter}
-                onChange={changeCounter}
-            />
-        </div>
+        <Dropdown.Item>
+            <FloatingLabel controlId="floatingInput" label={item.name}>
+                <Form.Control type="number" placeholder={item.name} value={item.counter} onChange={changeCounter}/>
+            </FloatingLabel>
+        </Dropdown.Item>
     )
 }

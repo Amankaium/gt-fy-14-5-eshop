@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
+import BasketList from '../Basket/BasketList';
 
 
 export default function Nav() {
     return (
         <nav>
-          <Link to="/">Главная</Link>&nbsp;&nbsp;&nbsp;
-          <Link to="/about">О нас</Link>
+          <div>
+            <Link to="/">Главная</Link>&nbsp;&nbsp;&nbsp;
+            <Link to="/about">О нас</Link>
+          </div>
+          <BasketList/>
         </nav>
     )
 } 
