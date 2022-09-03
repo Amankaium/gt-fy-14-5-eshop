@@ -8,6 +8,7 @@ export default function Nav() {
           <div>
             <Link to="/">Главная</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/about">О нас</Link>
+            <Link to="/login">Авторизация</Link>
           </div>
           <BasketList/>
         </nav>
