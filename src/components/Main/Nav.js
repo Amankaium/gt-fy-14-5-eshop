@@ -10,6 +10,7 @@ export default function Nav() {
             <Link to="/about">О нас</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/login">Авторизация</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/contacts">Контакты</Link>
+            <Link to="/lorem">Lorem</Link>
           </div>
           <BasketList/>
         </nav>
