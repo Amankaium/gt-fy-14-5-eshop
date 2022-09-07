@@ -9,6 +9,5 @@ export default function LoginPage() {
       <Form.Control aria-label="First name" />
       <Form.Control aria-label="Last name" />
     </InputGroup>
-
     )
 }
