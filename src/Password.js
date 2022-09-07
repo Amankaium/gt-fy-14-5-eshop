@@ -6,8 +6,8 @@ export default function Password(){
 	return (
 		<div>
 		 <InputGroup className="mb-3">
-        <InputGroup.Text>$</InputGroup.Text>
-        <InputGroup.Text>0.00</InputGroup.Text>
+        <InputGroup.Text>name</InputGroup.Text>
+        <InputGroup.Text>last name</InputGroup.Text>
         <Form.Control aria-label="Dollar amount (with dot and two decimal places)" />
       </InputGroup>
       <InputGroup>
