@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import LoginPage from './components/Auth/Login';
 import Contacts from './components/Contacts';
+import LoremPage from "./components/loremPage/LoremPage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route path="/about" element={<About/>}/>
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
+              <Route path="/lorem" element={<LoremPage/>}/>
           </Routes>
           
 
