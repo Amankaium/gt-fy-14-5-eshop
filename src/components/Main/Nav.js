@@ -5,12 +5,13 @@ import BasketList from '../Basket/BasketList';
 export default function Nav() {
     return (
         <nav>
-          <div>
+          <div class="d-flex p-2 bd-highlight">
             <Link to="/">Главная</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/about">О нас</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/login">Авторизация</Link>&nbsp;&nbsp;&nbsp;
-            <Link to="/contacts">Контакты</Link>
-            <Link to="/lorem">Lorem</Link>
+            <Link to="/contacts">Контакты</Link>&nbsp;&nbsp;&nbsp;
+            <Link to="/lorem">Lorem</Link>&nbsp;&nbsp;&nbsp;
+            <Link to="/geek">Geektech</Link>&nbsp;&nbsp;&nbsp;
           </div>
           <BasketList/>
         </nav>

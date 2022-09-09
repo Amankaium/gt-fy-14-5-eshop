@@ -8,6 +8,7 @@ import { Container } from 'react-bootstrap';
 import LoginPage from './components/Auth/Login';
 import Contacts from './components/Contacts';
 import LoremPage from "./components/loremPage/LoremPage";
+import GeekTech from "./components/geektech/Geektech";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
               <Route path="/lorem" element={<LoremPage/>}/>
+              <Route path="/geek" element={<GeekTech/>}/>
           </Routes>
           
 
