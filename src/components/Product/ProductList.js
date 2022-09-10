@@ -37,13 +37,14 @@ const ProductList = () => {
 
     return (
         <div>
-            <h1>Список товаров</h1>
+            <h2>Список товаров</h2>
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>Название</th>
+                    <th>Наименование товара</th>
                     <th>Цена</th>
-                    <th>Добавить</th>
+                    <th>Добавить в корзину</th>
+										<th>Количество</th>
                 </tr>
             </thead>
             <tbody>

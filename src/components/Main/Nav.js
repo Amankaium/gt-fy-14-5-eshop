@@ -11,6 +11,7 @@ export default function Nav() {
             <Link to="/login">Авторизация</Link>&nbsp;&nbsp;&nbsp;
             <Link to="/contacts">Контакты</Link>&nbsp;&nbsp;&nbsp;
 						<Link to="/password">Пароль</Link>&nbsp;&nbsp;&nbsp;
+						<Link to="/info">Информация</Link>&nbsp;&nbsp;&nbsp;
           </div>
           <BasketList/>
         </nav>

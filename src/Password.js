@@ -12,8 +12,8 @@ export default function Password(){
       </InputGroup>
       <InputGroup>
         <Form.Control aria-label="Dollar amount (with dot and two decimal places)" />
-        <InputGroup.Text>$</InputGroup.Text>
-        <InputGroup.Text>0.00</InputGroup.Text>
+        <InputGroup.Text>Password</InputGroup.Text>
+        <InputGroup.Text></InputGroup.Text>
       </InputGroup>
 
 		</div>

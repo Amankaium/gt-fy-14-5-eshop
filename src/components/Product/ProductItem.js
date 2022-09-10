@@ -8,7 +8,7 @@ export default function ProductItem({item, addToBasket}) {
     return (
         <tr onClick={() => {dispatch(addProduct(item))}}>
             <td>{item.name}</td>
-            <td>105</td>
+            <td>100</td>
             <td>
                 <Button onClick={() => {dispatch(addProduct(item))}}>
                     +
