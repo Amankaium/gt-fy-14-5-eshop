@@ -1,0 +1,23 @@
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: blue;
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.nav {
+    height: 15vh;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
