@@ -19,12 +19,11 @@ function App() {
               <Route path="/about" element={<About/>}/>
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
-          </Routes>
-          
-
+          </Routes>      
       </BrowserRouter>
     </Container>
   );
 }
 
 export default App;
+
