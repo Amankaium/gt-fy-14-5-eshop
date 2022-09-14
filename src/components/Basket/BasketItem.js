@@ -32,7 +32,6 @@ export default function BasketItem({ item }) {
         <Dropdown.Item>
             <FloatingLabel controlId="floatingInput" label={item.name}>
                 <Form.Control type="number" placeholder={item.name} value={item.counter} onChange={changeCounter}/>
-                
             </FloatingLabel>
         </Dropdown.Item>
     )

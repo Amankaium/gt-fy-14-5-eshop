@@ -28,6 +28,9 @@ const ProductList = () => {
             })
     }
 
+
+    useEffect(getData, [])
+
     function getAxiosData() {
         axios.get("https://jsonplaceholder.typicode.com/users")
             .then(response => setProducts(response.data))
@@ -55,8 +58,6 @@ const ProductList = () => {
                 ) }
             </tbody>
         </Table>
-
-            
         </div>
     )
 }

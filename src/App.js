@@ -8,6 +8,9 @@ import { Container } from 'react-bootstrap';
 import LoginPage from './components/Auth/Login';
 import Contacts from './components/Contacts';
 import LoremPage from "./components/loremPage/LoremPage";
+import Category from "./components/category/Category";
+import CategoryNav from "./components/category/CategoryNav";
+import CategoryItem from "./components/category/CategoryItem";
 
 
 function App() {
@@ -15,12 +18,15 @@ function App() {
     <Container>
       <BrowserRouter>         
           <Nav/>
+          <CategoryNav />
+          <CategoryItem/>
           <Routes>
               <Route path="/" element={<Main/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/login" element={<LoginPage/>}/>
               <Route path="/contacts" element={<Contacts/>}/>
               <Route path="/lorem" element={<LoremPage/>}/>
+              <Route path="/category" element={<Category/>}/>
           </Routes>
           
 
