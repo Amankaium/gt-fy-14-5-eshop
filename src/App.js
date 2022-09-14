@@ -22,8 +22,6 @@ function App() {
               <Route path="/contacts" element={<Contacts/>}/>
               <Route path="/lorem" element={<LoremPage/>}/>
           </Routes>
-          
-
       </BrowserRouter>
     </Container>
   );
